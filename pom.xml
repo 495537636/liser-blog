@@ -30,6 +30,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+        <dependency>
             <groupId>com.uinnova</groupId>
             <artifactId>common</artifactId>
             <version>1.0-SNAPSHOT</version>
@@ -123,13 +127,6 @@
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
 
-        <!-- 引入jquery -->
-        <dependency>
-            <groupId>org.webjars.bower</groupId>
-            <artifactId>jquery</artifactId>
-            <version>3.2.1</version>
-        </dependency>
-
         <!-- 添加Swagger在线文档支持 -->
         <dependency>
             <groupId>io.springfox</groupId>
@@ -140,13 +137,6 @@
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.5.0</version>
-        </dependency>
-
-        <!-- 添加LayerUI支持 -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>layui</artifactId>
-            <version>2.4.5</version>
         </dependency>
 
         <!--Apache Shiro所需的jar包
