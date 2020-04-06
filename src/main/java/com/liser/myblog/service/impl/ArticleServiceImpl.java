@@ -70,7 +70,7 @@ public class ArticleServiceImpl implements IArticleService {
      * @param id
      * @return
      */
-    @Cached(name = "article",key = "#id",expire = 10,cacheType = CacheType.LOCAL)
+    @Cached(name = "article",key = "#id",expire = 300,cacheType = CacheType.LOCAL)
     @Override
     public ArticleEntity getArticleInfo(String id) {
         return articleMapper.selectByPrimaryKey(id);
