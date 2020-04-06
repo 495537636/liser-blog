@@ -1,37 +1,44 @@
-# ·şÎñ¶Ë¿Ú
+# æœåŠ¡ç«¯å£
 server.port=8888
-# Êı¾İ¿âÃÜÂë¼ÓÃÜÃØÔ¿
+# æ•°æ®åº“å¯†ç åŠ å¯†ç§˜é’¥
 jasypt.encryptor.password=liserblog
 
-# ÅäÖÃÊı¾İÔ´
-# ·şÎñÆ÷ÓÃ»§ÃûÃÜÂë
+# é…ç½®æ•°æ®æº
+# æœåŠ¡å™¨ç”¨æˆ·åå¯†ç 
 #spring.datasource.username=ENC(caI83CiJGzjICNjdNE2lnA==)
 #spring.datasource.password=ENC(oacJOJhFWiffWDjZVETapg==)
 #spring.datasource.url=jdbc:mysql://23.105.195.73:3306/myblog?useUnicode=true&characterEncoding=UTF-8&useSSL=true
-# MACÓÃ»§ÃûÃÜÂë
-#spring.datasource.username=ENC(caI83CiJGzjICNjdNE2lnA==)
-#spring.datasource.password=ENC(x2Z5ZRem8tMcCmwWo/Ddhg==)
-# ¹«Ë¾µçÄÔÓÃ»§ÃûÃÜÂë
+# MACç”¨æˆ·åå¯†ç 
 spring.datasource.username=ENC(caI83CiJGzjICNjdNE2lnA==)
-spring.datasource.password=ENC(rlFLVXNChWsz7aHCqeNrcw==)
+spring.datasource.password=ENC(x2Z5ZRem8tMcCmwWo/Ddhg==)
+# å…¬å¸ç”µè„‘ç”¨æˆ·åå¯†ç 
+#spring.datasource.username=ENC(caI83CiJGzjICNjdNE2lnA==)
+#spring.datasource.password=ENC(rlFLVXNChWsz7aHCqeNrcw==)
 spring.datasource.url=jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=UTF-8&useSSL=true
 spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
 spring.datasource.driver-class-name=com.mysql.jdbc.Driver
 
-# ÅäÖÃÏîÄ¿Æô¶¯×Ô¶¯´´½¨±í
-entitymanager.packagesToScan=com.loving
+# é…ç½®é¡¹ç›®å¯åŠ¨è‡ªåŠ¨åˆ›å»ºè¡¨
+entitymanager.packagesToScan=com.liser
 spring.jpa.database=mysql
 spring.jpa.show-sql=true
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL55Dialect
 
-# ÅäÖÃMyBatisÓ³Éä
-mybatis.type-aliases-package=com.loving.*
-mybatis.mapper-locations=classpath:com/loving/*/mapper/*.xml
+# é…ç½®MyBatisæ˜ å°„
+mybatis.type-aliases-package=com.liser.*
+mybatis.mapper-locations=classpath:com/liser/*/mapper/*.xml
 mybatis.configuration.mapUnderscoreToCamelCase=true
 
-# ÅäÖÃÈÕÖ¾ĞÅÏ¢
+# é…ç½®æ—¥å¿—ä¿¡æ¯
 logging.config=classpath:logback-spring.xml
 logging.level.root=INFO
 logging.level.com.loving=DEBUG
 logging.level.org.hibernate=ERROR
+
+# ç³»ç»Ÿè°ƒè¯•
+system.debug=true
+
+# jetcacheé…ç½®é¡¹
+jetcache.statIntervalMinutes=15
+jetcache.

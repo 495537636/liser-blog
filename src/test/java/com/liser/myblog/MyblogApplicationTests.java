@@ -1,4 +1,4 @@
-package com.loving.myblog;
+package com.liser.myblog;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

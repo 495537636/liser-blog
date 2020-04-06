@@ -1,4 +1,4 @@
-package com.loving.myblog.config;
+package com.liser.myblog.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

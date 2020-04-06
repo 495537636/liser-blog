@@ -1,5 +1,6 @@
-package com.loving.myblog.config;
+package com.liser.myblog.config;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.validation.Errors;
@@ -19,6 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @Configuration
 @EnableSwagger2
+@ConditionalOnProperty(value = "system.debug", matchIfMissing = false, havingValue = "true")
 public class SwaggerConfig {
 
     /**
@@ -47,8 +49,8 @@ public class SwaggerConfig {
 
     private ApiInfo mainApiInfo() {
         return new ApiInfoBuilder()
-                .title("数字化三维预案【主模块】接口文档")
-                .description("数字化三维预案【主模块】接口文档API")
+                .title("Liser博客接口文档")
+                .description("Liser博客接口文档API")
                 .version("1.0")
                 .build();
     }

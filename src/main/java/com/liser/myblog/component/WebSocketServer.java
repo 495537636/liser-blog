@@ -1,4 +1,4 @@
-package com.loving.myblog.component;
+package com.liser.myblog.component;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSONObject;

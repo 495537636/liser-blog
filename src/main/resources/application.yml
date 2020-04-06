@@ -1,0 +1,50 @@
+# 服务端口
+server:
+  port: 8888
+# 数据库密码加密秘钥
+jasypt:
+  encryptor:
+    password: liserblog
+# 配置数据源
+spring:
+  datasource:
+    username: ENC(caI83CiJGzjICNjdNE2lnA==)
+    password: ENC(x2Z5ZRem8tMcCmwWo/Ddhg==)
+    url: jdbc:mysql://localhost:3306/myblog?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
+# 配置MyBatis映射
+mybatis:
+  type-aliases-package: com.liser.*
+  mapper-locations: classpath:com/liser/*/mapper/*.xml
+  configuration:
+    mapUnderscoreToCamelCase: true
+# 配置日志信息
+logging:
+  config: classpath:logback-spring.xml
+  level:
+    root: INFO
+    com.liser: DEBUG
+    org:
+      hibernate: ERROR
+# 系统调试
+system:
+  debug: true
+# jetcache配置项
+jetcache:
+  statIntervalMinutes: 15
+  areaInCacheName: false
+  local:
+    default:
+      type: caffeine
+      keyConvertor: fastjson
+      limit: 300
+      expireAfterAccessInMillis: 1800000
