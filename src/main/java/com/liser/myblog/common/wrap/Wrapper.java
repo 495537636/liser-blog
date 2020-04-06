@@ -11,7 +11,7 @@ import java.io.Serializable;
  * <p>Description 返回对象封装类 </p>
  * <p>Company: http://www.uinnova.cn/ </p>
  * @author LiMG
- * @Date 2018/3/28 11:02
+ * @create 2018/3/28 11:02
  */
 @ApiModel(value = "返回对象")
 public class Wrapper<T> implements Serializable {
